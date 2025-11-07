@@ -33,10 +33,6 @@ header {
   z-index: 10;
 }
 
-.logo { /* Estilo para o link da logo */
-  display: flex; /* Para centralizar a imagem dentro do link, se necessário */
-}
-
 .logo img {
   height: 85px;
   width: auto;
@@ -65,35 +61,15 @@ nav a:hover {
   cursor: pointer;
 }
 
+.menu-toggle div {
 .menu-toggle .bar {
   width: 25px;
   height: 3px;
+  background: var(--amarelo);
   background: var(--azul); /* Alterado para azul para combinar com os links */
   margin: 4px 0;
   transition: 0.3s;
 }
-
-/* Animação do ícone de hambúrguer para X */
-.menu-toggle.active .bar:nth-child(1) {
-  transform: translateY(7px) rotate(45deg);
-}
-
-.menu-toggle.active .bar:nth-child(2) {
-  opacity: 0;
-}
-
-.menu-toggle.active .bar:nth-child(3) {
-  transform: translateY(-7px) rotate(-45deg);
-}
-
-/* Estilos para o menu mobile */
-@media (max-width: 768px) {
-  header {
-    padding: 0.5rem 1.5rem; /* Ajuste o padding do cabeçalho em mobile */
-  }
-  .logo img { height: 70px; } /* Ajuste o tamanho da logo em mobile */
-}
-
 
 @media (max-width: 768px) {
   nav {
@@ -207,10 +183,6 @@ section { padding: 4rem 2rem; text-align: center; }
   margin-bottom: 2rem; /* Adiciona espaço abaixo do título "O que nossos clientes dizem" */
 }
 
-#portfolio h2 {
-  margin-bottom: 2rem; /* Adiciona espaço abaixo do título "Nosso Portfólio" */
-}
-
 .servicos, .depoimentos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -224,7 +196,6 @@ section { padding: 4rem 2rem; text-align: center; }
   color: var(--azul);
   border-radius: 10px;
   padding: 2rem;
-  text-align: center; /* Centraliza o texto nos cards de serviço */
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   transition: transform 0.3s;
 }
@@ -262,12 +233,6 @@ footer {
   text-align: center;
   color: #aaa;
   font-size: 0.9rem;
-}
-
-.developer-credit {
-  margin-top: 0.5rem;
-  font-size: 0.8rem;
-  color: #888;
 }
 
 #contato {
@@ -368,7 +333,6 @@ footer {
 
 .social-icon:hover {
   transform: scale(1.1);
-  filter: brightness(1.2); /* Adiciona um brilho ao passar o mouse */
 }
 
 @media (max-width: 768px) {

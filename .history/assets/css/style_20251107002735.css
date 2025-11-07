@@ -75,7 +75,7 @@ nav a:hover {
 
 /* Animação do ícone de hambúrguer para X */
 .menu-toggle.active .bar:nth-child(1) {
-  transform: translateY(7px) rotate(45deg);
+  transform: rotate(45deg) translate(5px, 5px);
 }
 
 .menu-toggle.active .bar:nth-child(2) {
@@ -83,7 +83,7 @@ nav a:hover {
 }
 
 .menu-toggle.active .bar:nth-child(3) {
-  transform: translateY(-7px) rotate(-45deg);
+  transform: rotate(-45deg) translate(5px, -5px);
 }
 
 /* Estilos para o menu mobile */
@@ -262,12 +262,6 @@ footer {
   text-align: center;
   color: #aaa;
   font-size: 0.9rem;
-}
-
-.developer-credit {
-  margin-top: 0.5rem;
-  font-size: 0.8rem;
-  color: #888;
 }
 
 #contato {

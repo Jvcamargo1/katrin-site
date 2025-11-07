@@ -7,10 +7,6 @@
   --preto: #121212;
 }
 
-html {
-  scroll-padding-top: 100px; /* Compensa a altura do cabeçalho fixo */
-}
-
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
@@ -25,16 +21,12 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0.7rem 2rem;
-  background-color: var(--branco); /* Alterado para branco */
+  background-color: var(--azul);
   border-bottom: 2px solid var(--amarelo);
   position: sticky;
   top: 0;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   z-index: 10;
-}
-
-.logo { /* Estilo para o link da logo */
-  display: flex; /* Para centralizar a imagem dentro do link, se necessário */
 }
 
 .logo img {
@@ -48,7 +40,7 @@ nav {
 }
 
 nav a {
-  color: var(--azul); /* Alterado para azul para contrastar com o fundo branco */
+  color: var(--branco);
   text-decoration: none;
   margin-left: 1.5rem;
   font-weight: 500;
@@ -65,35 +57,13 @@ nav a:hover {
   cursor: pointer;
 }
 
-.menu-toggle .bar {
+.menu-toggle div {
   width: 25px;
   height: 3px;
-  background: var(--azul); /* Alterado para azul para combinar com os links */
+  background: var(--amarelo);
   margin: 4px 0;
   transition: 0.3s;
 }
-
-/* Animação do ícone de hambúrguer para X */
-.menu-toggle.active .bar:nth-child(1) {
-  transform: translateY(7px) rotate(45deg);
-}
-
-.menu-toggle.active .bar:nth-child(2) {
-  opacity: 0;
-}
-
-.menu-toggle.active .bar:nth-child(3) {
-  transform: translateY(-7px) rotate(-45deg);
-}
-
-/* Estilos para o menu mobile */
-@media (max-width: 768px) {
-  header {
-    padding: 0.5rem 1.5rem; /* Ajuste o padding do cabeçalho em mobile */
-  }
-  .logo img { height: 70px; } /* Ajuste o tamanho da logo em mobile */
-}
-
 
 @media (max-width: 768px) {
   nav {
@@ -103,7 +73,7 @@ nav a:hover {
     top: 70px;
     right: 0;
     width: 100%;
-    background: var(--branco); /* Alterado para branco no menu mobile também */
+    background: var(--azul);
     text-align: center;
     padding: 1rem 0;
     border-top: 1px solid var(--amarelo);
@@ -199,18 +169,6 @@ section { padding: 4rem 2rem; text-align: center; }
   font-size: 30px !important;
 }
 
-#servicos h2 {
-  margin-bottom: 2rem; /* Adiciona espaço abaixo do título "Nossos Serviços" */
-}
-
-#depoimentos h2 {
-  margin-bottom: 2rem; /* Adiciona espaço abaixo do título "O que nossos clientes dizem" */
-}
-
-#portfolio h2 {
-  margin-bottom: 2rem; /* Adiciona espaço abaixo do título "Nosso Portfólio" */
-}
-
 .servicos, .depoimentos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -224,7 +182,6 @@ section { padding: 4rem 2rem; text-align: center; }
   color: var(--azul);
   border-radius: 10px;
   padding: 2rem;
-  text-align: center; /* Centraliza o texto nos cards de serviço */
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   transition: transform 0.3s;
 }
@@ -262,12 +219,6 @@ footer {
   text-align: center;
   color: #aaa;
   font-size: 0.9rem;
-}
-
-.developer-credit {
-  margin-top: 0.5rem;
-  font-size: 0.8rem;
-  color: #888;
 }
 
 #contato {
@@ -368,7 +319,6 @@ footer {
 
 .social-icon:hover {
   transform: scale(1.1);
-  filter: brightness(1.2); /* Adiciona um brilho ao passar o mouse */
 }
 
 @media (max-width: 768px) {
