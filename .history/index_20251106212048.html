@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Katrin Elétrica | Serviços Elétricos em Geral</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- 1. Adicionar o CSS do Swiper.js -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="logoke.png" alt="Logo Katrin Elétrica" />
+    </div>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+    <nav id="nav">
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#depoimentos">Depoimentos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero">
+      <!-- Estrutura do Carrossel -->
+      <div class="swiper hero-carousel">
+        <div class="swiper-wrapper">
+          <!-- Slides com imagens de exemplo (substitua pelas suas) -->
+          <div class="swiper-slide"><img src="https://images.pexels.com/photos/4219175/pexels-photo-4219175.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Serviço elétrico 1"></div>
+          <div class="swiper-slide"><img src="https://images.pexels.com/photos/577210/pexels-photo-577210.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Serviço elétrico 2"></div>
+          <div class="swiper-slide"><img src="https://images.pexels.com/photos/8005396/pexels-photo-8005396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Serviço elétrico 3"></div>
+        </div>
+        <!-- Botões de navegação -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+      <!-- Conteúdo sobreposto -->
+      <div class="hero-content">
+        <h2>Serviços Elétricos de Confiança</h2>
+        <p>Desde pequenas manutenções até obras completas — a <strong>Katrin Elétrica</strong> garante qualidade, segurança e eficiência em cada projeto.</p>
+        <a href="#contato" class="cta-button">Solicite um Orçamento</a>
+      </div>
+    </section>
+
+    <section id="sobre">
+      <h2>Sobre Nós</h2>
+      <p>Somos especializados em serviços elétricos residenciais, prediais e rurais. Atendemos desde pequenas instalações até obras de grande porte, sempre com compromisso e segurança.</p>
+    </section>
+
+    <section id="servicos">
+      <h2>Nossos Serviços</h2>
+      <div class="servicos ">
+        <div class="card hidden">
+          <h3>Instalações e Manutenções</h3>
+          <p>Serviços elétricos em geral para residências, comércios e indústrias.</p>
+        </div>
+        <div class="card hidden">
+          <h3>Redes de Baixa e Média Tensão</h3>
+          <p>Montagem, manutenção e adequação conforme normas técnicas.</p>
+        </div>
+        <div class="card hidden">
+          <h3>Poste de Entrada</h3>
+          <p>Instalação completa com padrões exigidos pelas concessionárias.</p>
+        </div>
+        <div class="card hidden">
+          <h3>Projetos Elétricos</h3>
+          <p>Planejamento e execução de sistemas elétricos para novas construções.</p>
+        </div>
+        <div class="card hidden">
+          <h3>Automação Residencial</h3>
+          <p>Modernize sua casa com sistemas de automação para iluminação, segurança e conforto.</p>
+        </div>
+        <div class="card hidden">
+          <h3>Consultoria Energética</h3>
+          <p>Análise de consumo e propostas para otimização e redução de custos com energia.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="depoimentos">
+      <h2>O que nossos clientes dizem</h2>
+      <div class="depoimentos">
+        <div class="depoimento-card hidden">
+          <p>"Serviço impecável e muito profissional. Recomendo a Katrin Elétrica para qualquer um que precise de um eletricista de confiança."</p>
+          <p class="autor">- João Silva</p>
+        </div>
+        <div class="depoimento-card hidden">
+          <p>"A equipe foi rápida, eficiente e resolveu meu problema em pouco tempo. Com certeza chamarei novamente quando precisar."</p>
+          <p class="autor">- Maria Oliveira</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato">
+      <h2>Faça seu Orçamento</h2>
+      <div class="contato-wrapper">
+        <div class="contato-info">
+          <h3>Informações de Contato</h3>
+          <p><i class="fas fa-phone"></i> <a href="https://wa.me/5514998205060" target="_blank">(14) 99820-5060</a></p>
+          <p><i class="fas fa-envelope"></i> <a href="mailto:katrineletrica@hotmail.com">katrineletrica@hotmail.com</a></p>
+          <p><i class="fab fa-instagram"></i> <a href="https://instagram.com/katrineletrica" target="_blank">@katrineletrica</a></p>
+          <p>Entre em contato para um orçamento rápido e sem compromisso. Estamos prontos para atender você!</p>
+        </div>
+        <div class="contato-form-wrapper">
+          <form class="contato-form" id="contact-form">
+            <div class="form-group">
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" name="nome" placeholder="Seu Nome" required>
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" placeholder="Seu E-mail" required>
+            </div>
+            <div class="form-group">
+              <label for="telefone">Telefone</label>
+              <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX">
+            </div>
+            <div class="form-group">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" placeholder="Descreva o serviço que você precisa" required></textarea>
+            </div>
+            <button type="submit" class="cta-button">Enviar Pedido de Orçamento</button>
+          </form>
+          <p id="form-message"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social-links">
+      <a href="https://instagram.com/katrineletrica" target="_blank"><img src="instalogo.png" alt="Instagram" class="social-icon"></a>
+      <a href="https://wa.me/5514998205060" target="_blank"><img src="wpplogov.png" alt="WhatsApp" class="social-icon"></a>
+    </div>
+    <p id="footer-year">© 2025 Katrin Elétrica — Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- 2. Adicionar o JavaScript do Swiper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    const toggle = document.getElementById("menu-toggle");
+    const nav = document.getElementById("nav");
+    toggle.addEventListener("click", () => nav.classList.toggle("active"));
+
+    const contactForm = document.getElementById('contact-form');
+    const formMessage = document.getElementById('form-message');
+    const submitButton = contactForm.querySelector('button[type="submit"]');
+
+    contactForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const formData = new FormData(this);
+      const data = {
+        nome: formData.get('nome'),
+        email: formData.get('email'),
+        telefone: formData.get('telefone'),
+        mensagem: formData.get('mensagem'),
+      };
+
+      // Mostra a mensagem de "Enviando..." e desabilita o botão
+      formMessage.textContent = 'Enviando...';
+      formMessage.style.color = 'var(--amarelo)';
+      submitButton.disabled = true;
+
+      // Simula um tempo de espera de 1.5 segundos (como se estivesse enviando)
+      setTimeout(() => {
+        // Exibe a mensagem de sucesso
+        formMessage.textContent = 'Mensagem enviada com sucesso!';
+        formMessage.style.color = 'lightgreen';
+        
+        // Limpa os campos do formulário
+        contactForm.reset();
+
+        // Reabilita o botão após o "envio"
+        submitButton.disabled = false;
+
+        // Opcional: faz a mensagem de sucesso desaparecer após 5 segundos
+        setTimeout(() => {
+          formMessage.textContent = '';
+        }, 5000);
+      }, 1500);
+    });
+
+    // Script para animação de entrada
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    });
+
+    const hiddenElements = document.querySelectorAll('.hidden');
+    hiddenElements.forEach((el) => observer.observe(el));
+
+    // Script para atualizar o ano do rodapé automaticamente
+    document.getElementById('footer-year').textContent = `© ${new Date().getFullYear()} Katrin Elétrica — Todos os direitos reservados.`;
+
+    // 3. Inicializar o Swiper.js
+    const swiper = new Swiper('.hero-carousel', {
+      loop: true, // Faz o carrossel girar em loop
+      autoplay: {
+        delay: 5000, // Muda de imagem a cada 5 segundos
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+</body>
+</html>
